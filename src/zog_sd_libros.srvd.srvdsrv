@@ -1,0 +1,7 @@
+@EndUserText.label: 'Libros'
+define service ZOG_SD_LIBROS {
+  expose zog_cds_libros       as Libros;
+  expose zog_cds_clientes     as Clientes;
+  expose zog_cds_clientes_lib as Ventas;
+  expose zog_cds_categorias   as Categorias;
+}

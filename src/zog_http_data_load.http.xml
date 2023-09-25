@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_HTTP" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <HTTPID>ZOG_HTTP_DATA_LOAD</HTTPID>
+   <HTTPTEXT>
+    <ID>ZOG_HTTP_DATA_LOAD</ID>
+    <VERSION>A</VERSION>
+    <LANG>E</LANG>
+    <SHORTTEXT>Data Table Load from File</SHORTTEXT>
+   </HTTPTEXT>
+   <HTTPHDL>
+    <UCONSERVHANDLER>
+     <ID>ZOG_HTTP_DATA_LOAD</ID>
+     <VERSION>A</VERSION>
+     <SERVICEORDER>01</SERVICEORDER>
+     <SERVICEHANDLER>ZOG_CL_DATA_FILE_UPLOAD</SERVICEHANDLER>
+    </UCONSERVHANDLER>
+   </HTTPHDL>
+  </asx:values>
+ </asx:abap>
+</abapGit>

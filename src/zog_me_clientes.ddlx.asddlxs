@@ -1,0 +1,45 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Cliente',
+    typeNamePlural: 'Clientes',
+    typeImageUrl: '',
+    imageUrl: 'Imagen',
+    title: { type: #STANDARD,
+             label: '',
+             value: 'IdCliente' },
+    description: { type: #STANDARD,
+                   label: '',
+                   value: 'NombreCompleto' }
+}
+annotate entity zog_cds_clientes with
+{
+  @UI.facet: [{ id: 'DetallesCliente',
+                label: 'Cliente',
+                type: #COLLECTION,
+                position: 10},
+
+              { id: 'Cliente',
+                parentId: 'DetallesCliente',
+                label: 'Detalles',
+                type: #FIELDGROUP_REFERENCE,
+                targetQualifier: 'DetallesCliente',
+                position: 10}]
+
+  @UI.fieldGroup: [{ qualifier: 'DetallesCliente', position: 10, label: 'ID'}]
+  @UI.lineItem: [{ position: 10, importance: #HIGH, label: 'ID' }]
+  IdCliente;
+
+  @UI.fieldGroup: [{ qualifier: 'DetallesCliente', position: 20}]
+  @UI.lineItem: [{ position: 20, importance: #HIGH }]
+  Acceso;
+
+  @UI.fieldGroup: [{ qualifier: 'DetallesCliente', position: 30, label: 'Nombre del Cliente'}]
+  @UI.lineItem: [{ position: 30, importance: #HIGH, label: 'Nombre del Cliente' }]
+  NombreCompleto;
+
+  @UI.fieldGroup: [{ qualifier: 'DetallesCliente', position: 40, label: 'Correo Electrónico'}]
+  @UI.lineItem: [{ position: 40, importance: #HIGH, label: 'Correo Electrónico' }]
+  Email;
+
+
+}
